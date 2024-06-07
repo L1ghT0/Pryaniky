@@ -1,0 +1,98 @@
+.userdocs{
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 1440px;
+    padding: 10px;
+}
+.userdocs_head_keynames{
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 20px 15px;
+    gap: 3px;
+    border-bottom: 1px solid lightgray;
+}
+.userdocs_rowData{
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 60px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 10px 15px;
+    gap: 3px;
+}
+
+.userdocs_rowData:hover{
+    cursor: pointer;
+    background-color: gainsboro;
+}
+.selected{
+    background-color: gainsboro;
+}
+.userdocs_rowData_inputCell,
+.userdocs_head_keynames__cell,
+.userdocs_rowData_cell{
+    width: 180px;
+}
+.userdocs_rowData_inputCell{
+    outline: none;
+    border: none;
+    background-color: gainsboro;
+    padding: 10px 0px;
+    width: 100%;
+}
+.userdocs_rowData_inputCell:hover{
+    border-bottom: 1px black solid;
+}
+.loading{
+    background-color: darkgrey;
+    pointer-events: none;
+}
+.loader{
+    position: absolute;
+    max-width: 30px;
+    max-height: 30px;
+    left: 46.5%;
+    top: 10px;
+}
+.userdocs_rowData_inputCell,
+.userdocs_rowData,
+.userdocs_head_keynames{
+    overflow-wrap: anywhere;
+}
+@media screen and (max-width:1024px) {
+    .userdocs_rowData_inputCell,
+    .userdocs_rowData,
+    .userdocs_head_keynames{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:880px) {
+    .userdocs_rowData_inputCell,
+    .userdocs_rowData,
+    .userdocs_head_keynames{
+        font-size: 12px;
+    }
+    .loader{
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
+@media screen and (max-width:770px) {
+    .userdocs_rowData_inputCell,
+    .userdocs_rowData,
+    .userdocs_head_keynames{
+        font-size: 10px;
+    }
+}
+
+.fieldRequired{
+    border-bottom: 1px red solid;
+}
+.fieldRequired::placeholder{
+    color: red;
+}
+
